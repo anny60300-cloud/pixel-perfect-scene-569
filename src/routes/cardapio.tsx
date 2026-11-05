@@ -101,7 +101,7 @@ function Chip({
 }: {
   active: boolean;
   to: CategoryId | undefined;
-  q?: string;
+  q?: string | undefined;
   children: React.ReactNode;
 }) {
   return (
