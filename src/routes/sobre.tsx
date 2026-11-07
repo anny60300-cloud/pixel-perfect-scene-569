@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import berry from "@/assets/berry-dream.jpg";
-import risoto from "@/assets/risoto-verde.jpg";
+import cliente from "@/assets/cliente-vegui.jpg";
 import { AppleIcon, btn, Eyebrow } from "@/components/vegui/primitives";
 
 export const Route = createFileRoute("/sobre")({
@@ -32,13 +31,15 @@ function About() {
       </section>
 
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 md:grid-cols-2 md:px-8">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="arch aspect-[3/4] overflow-hidden">
-            <img src={risoto} alt="Risoto Verde" loading="lazy" className="h-full w-full object-cover" />
-          </div>
-          <div className="blob-b mt-16 aspect-square overflow-hidden">
-            <img src={berry} alt="Berry Dream" loading="lazy" className="h-full w-full object-cover" />
-          </div>
+        <div className="arch aspect-[4/5] overflow-hidden">
+          <img
+            src={cliente}
+            alt="Cliente sorrindo enquanto come um bowl vegano da Vegui"
+            loading="lazy"
+            width={1024}
+            height={1280}
+            className="h-full w-full object-cover"
+          />
         </div>
         <div>
           <Eyebrow>No que acreditamos</Eyebrow>
