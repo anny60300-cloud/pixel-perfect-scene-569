@@ -37,7 +37,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       </div>
       <div className="mt-5 flex items-start justify-between gap-4">
         <div>
-          <p className="font-script text-lg text-accent-foreground/70">{cat?.script}</p>
+          <p className="text-eyebrow text-accent-foreground/70">{cat?.script}</p>
           <Link to="/produto/$slug" params={{ slug: product.slug }}>
             <h3 className="text-xl font-extrabold text-primary">{product.name}</h3>
           </Link>

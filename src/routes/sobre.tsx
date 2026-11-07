@@ -24,7 +24,7 @@ function About() {
         <div className="relative mx-auto max-w-5xl px-5 py-20 text-center md:py-28">
           <AppleIcon className="mx-auto w-16" />
           <h1 className="text-display mt-8 text-primary">
-            Comer bem pode ser <span className="font-script text-accent">leve</span>.
+            Comer bem pode ser <span className="text-accent">leve</span>.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
             A Vegui Foods é uma marca de alimentação vegana, com produtos sem glúten, que busca tornar a alimentação

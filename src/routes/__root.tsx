@@ -21,7 +21,7 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <p className="font-script text-5xl text-accent">ops!</p>
+        <p className="text-5xl font-extrabold text-accent">ops!</p>
         <h1 className="text-title mt-2 text-primary">Página não encontrada</h1>
         <p className="mt-3 text-muted-foreground">Esse prato não está no nosso cardápio.</p>
         <Link
@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Urbanist:wght@400;500;600;700;800;900&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap",
       },
     ],
   }),

@@ -39,7 +39,7 @@ function Menu() {
         <div className="mx-auto max-w-7xl px-5 pb-10 pt-14 md:px-8 md:pt-20">
           <Eyebrow>Cardápio</Eyebrow>
           <h1 className="text-display mt-4 text-primary">
-            Escolha seu <span className="font-script text-accent">sabor</span>
+            Escolha seu <span className="text-accent">sabor</span>
           </h1>
           <p className="mt-4 max-w-lg text-muted-foreground">
             Tudo vegano e sem glúten. Toque em um item para ver ingredientes e detalhes.
@@ -71,7 +71,7 @@ function Menu() {
         )}
         {groups.length === 0 && (
           <div className="py-24 text-center">
-            <p className="font-script text-4xl text-accent">hmm…</p>
+            <p className="text-4xl font-extrabold text-accent">hmm…</p>
             <p className="mt-2 text-lg font-bold text-primary">Nada encontrado por aqui.</p>
           </div>
         )}
@@ -79,7 +79,7 @@ function Menu() {
           <section key={g.id} className="pt-16">
             <div className="flex items-baseline gap-4 border-b-2 border-dashed border-accent/60 pb-4">
               <h2 className="text-title text-primary">{g.label}</h2>
-              <span className="font-script text-2xl text-accent">{g.items.length} opções</span>
+              <span className="text-sm font-bold text-accent">{g.items.length} opções</span>
             </div>
             <div className="mt-10 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
               {g.items.map((p, i) => (

@@ -39,7 +39,7 @@ function Index() {
             <Eyebrow>Vegano · Sem glúten</Eyebrow>
             <h1 className="text-display mt-6 text-primary">
               Seu próximo prato{" "}
-              <span className="font-script relative inline-block text-[1.08em] text-accent">
+              <span className="text-accent">
                 favorito
               </span>{" "}
               é Vegui.
@@ -81,7 +81,7 @@ function Index() {
               <div key={k} className="flex gap-10">
                 {["vegano", "sem glúten", "feito com carinho", "sabor de verdade", "leve & consciente", "100% vegetal"].map((w) => (
                   <span key={w} className="flex items-center gap-10 text-2xl font-extrabold text-primary-foreground">
-                    <span className={w.includes("carinho") ? "font-script text-accent" : ""}>{w}</span>
+                    <span>{w}</span>
                     <AppleIcon tone="pink" className="h-6 w-6" />
                   </span>
                 ))}
@@ -97,13 +97,13 @@ function Index() {
           <div>
             <Eyebrow>Nossos diferenciais</Eyebrow>
             <h2 className="text-title mt-4 text-primary">
-              Vegetal, gostoso e <span className="font-script text-accent">do seu jeito</span>
+              Vegetal, gostoso e <span className="text-accent">do seu jeito</span>
             </h2>
           </div>
           <ol className="grid gap-px overflow-hidden rounded-3xl bg-border sm:grid-cols-3">
             {values.map((v, i) => (
               <li key={v.t} className="bg-paper p-7">
-                <span className="font-script text-4xl text-accent">0{i + 1}</span>
+                <span className="text-4xl font-extrabold text-accent">0{i + 1}</span>
                 <h3 className="mt-3 text-lg font-extrabold text-primary">{v.t}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{v.d}</p>
               </li>
@@ -145,7 +145,7 @@ function Index() {
             >
               <AppleIcon tone={i % 2 === 0 ? "pink" : "green"} className="h-10 w-10 transition group-hover:rotate-12" />
               <div>
-                <p className="font-script text-3xl md:text-4xl">{c.script}</p>
+                <p className="text-3xl font-extrabold md:text-4xl">{c.script}</p>
                 <p className="mt-1 text-sm font-bold">{c.label} →</p>
               </div>
             </Link>
@@ -163,7 +163,7 @@ function Index() {
           <div>
             <p className="text-eyebrow text-accent">Sobre a Vegui</p>
             <h2 className="text-title mt-4">
-              Alimentação vegetal mais <span className="font-script text-accent">acessível</span>, criativa e presente no dia a dia.
+              Alimentação vegetal mais <span className="text-accent">acessível</span>, criativa e presente no dia a dia.
             </h2>
             <p className="mt-6 max-w-md text-primary-foreground/80">
               A Vegui Foods nasceu para mostrar que comer bem pode ser simples, saboroso e divertido — sem ingredientes de

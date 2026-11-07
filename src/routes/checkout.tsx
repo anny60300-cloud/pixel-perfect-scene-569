@@ -45,7 +45,7 @@ function Checkout() {
     <section className="mx-auto max-w-7xl px-5 pt-14 md:px-8">
       <Eyebrow>Checkout</Eyebrow>
       <h1 className="text-title mt-4 text-primary">
-        Quase <span className="font-script text-accent">lá!</span>
+        Quase <span className="text-accent">lá!</span>
       </h1>
       <form onSubmit={submit} className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
         <div className="space-y-6">

@@ -35,7 +35,7 @@ function CartPage() {
     <section className="mx-auto max-w-7xl px-5 pt-14 md:px-8">
       <Eyebrow>Seu pedido</Eyebrow>
       <h1 className="text-title mt-4 text-primary">
-        Carrinho <span className="font-script text-accent">({count})</span>
+        Carrinho <span className="text-accent">({count})</span>
       </h1>
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.6fr_1fr]">
         <ul className="divide-y divide-border">
