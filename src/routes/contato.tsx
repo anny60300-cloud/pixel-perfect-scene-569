@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, MapPin, MessageCircle, Phone } from "lucide-react";
 import { btn, Eyebrow } from "@/components/vegui/primitives";
-import { whatsappUrl, WHATSAPP_NUMBER } from "@/lib/cart-logic";
+import { whatsappUrl } from "@/lib/cart-logic";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
