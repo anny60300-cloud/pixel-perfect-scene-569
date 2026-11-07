@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import patternGreen from "@/assets/pattern-green.png";
 import berry from "@/assets/berry-dream.jpg";
 import risoto from "@/assets/risoto-verde.jpg";
 import { AppleIcon, btn, Eyebrow } from "@/components/vegui/primitives";
@@ -20,7 +19,6 @@ function About() {
   return (
     <>
       <section className="relative overflow-hidden bg-cream">
-        <img src={patternGreen} alt="" aria-hidden className="pointer-events-none absolute right-0 top-0 w-[560px] opacity-10" />
         <div className="relative mx-auto max-w-5xl px-5 py-20 text-center md:py-28">
           <AppleIcon className="mx-auto w-16" />
           <h1 className="text-display mt-8 text-primary">

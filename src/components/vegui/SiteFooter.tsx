@@ -1,11 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import logoCream from "@/assets/logo-cream.png";
-import pattern from "@/assets/pattern-pink.png";
 
 export function SiteFooter() {
   return (
     <footer className="relative mt-24 overflow-hidden bg-primary text-primary-foreground">
-      <img src={pattern} alt="" aria-hidden className="pointer-events-none absolute right-0 top-0 w-[520px] opacity-15" />
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-[1.4fr_1fr_1fr] md:px-8">
         <div>
           <img src={logoCream} alt="Vegui Foods" className="h-14 w-auto" />
