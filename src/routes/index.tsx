@@ -70,7 +70,7 @@ function Index() {
             <AppleIcon tone="pink" className="animate-float absolute -left-6 bottom-10 w-20 md:-left-10 md:w-28" />
           </div>
         </div>
-        <img src={patternPink} alt="" aria-hidden className="pointer-events-none absolute -bottom-24 -left-32 w-[460px] opacity-30" />
+        <img src={patternPink} alt="" aria-hidden className="pointer-events-none absolute bottom-0 left-0 w-[460px] opacity-30" />
       </section>
 
       {/* STRIPED MARQUEE */}
@@ -155,7 +155,7 @@ function Index() {
 
       {/* INSTITUTIONAL */}
       <section className="relative mx-auto mt-24 max-w-7xl overflow-hidden rounded-none bg-primary px-5 py-20 text-primary-foreground md:rounded-[3rem] md:px-16">
-        <img src={patternPink} alt="" aria-hidden className="pointer-events-none absolute -right-20 -top-20 w-[480px] opacity-20" />
+        <img src={patternPink} alt="" aria-hidden className="pointer-events-none absolute right-0 top-0 w-[480px] opacity-20" />
         <div className="relative grid items-center gap-12 md:grid-cols-2">
           <div className="blob-a aspect-square overflow-hidden">
             <img src={bowl} alt="Vegui Bowl" loading="lazy" width={1024} height={1024} className="h-full w-full object-cover" />
