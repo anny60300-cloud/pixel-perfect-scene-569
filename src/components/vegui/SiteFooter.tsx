@@ -24,7 +24,11 @@ export function SiteFooter() {
         <div>
           <p className="text-eyebrow text-accent">Contato</p>
           <p className="mt-5 text-primary-foreground/80">
-            Endereço, telefone e horários serão publicados em breve.
+            Rua Chile, 1678 — Curitiba/PR
+            <br />
+            Seg a sex, 8h às 21h
+            <br />
+            (67) 0000-0000
           </p>
           <Link to="/contato" className="mt-4 inline-block font-bold underline decoration-accent decoration-2 underline-offset-4">
             Ver detalhes
