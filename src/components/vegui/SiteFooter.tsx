@@ -12,7 +12,7 @@ export function SiteFooter() {
           <p className="mt-6 max-w-sm text-primary-foreground/80">
             Comida vegana e sem glúten, feita para entrar no seu dia a dia com leveza e muito sabor.
           </p>
-          <p className="font-script mt-6 text-3xl text-accent">com carinho, Vegui.</p>
+          <p className="mt-6 text-3xl font-extrabold text-accent">com carinho, Vegui.</p>
         </div>
         <div>
           <p className="text-eyebrow text-accent">Navegue</p>

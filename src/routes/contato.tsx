@@ -25,7 +25,7 @@ function Contact() {
     <section className="mx-auto max-w-7xl px-5 pt-14 md:px-8 md:pt-20">
       <Eyebrow>Contato</Eyebrow>
       <h1 className="text-display mt-4 text-primary">
-        Vem <span className="font-script text-accent">bater um papo</span>
+        Vem <span className="text-accent">bater um papo</span>
       </h1>
       <div className="mt-14 grid gap-4 md:grid-cols-3">
         {items.map(({ icon: Icon, t, d }, i) => (
@@ -38,7 +38,7 @@ function Contact() {
       </div>
       <div className="mt-10 flex flex-col items-start gap-4 rounded-[2rem] bg-primary p-8 text-primary-foreground md:flex-row md:items-center md:justify-between md:p-12">
         <p className="text-2xl font-extrabold md:text-3xl">
-          Dúvidas sobre ingredientes ou alergias? <span className="font-script text-accent">Fala com a gente.</span>
+          Dúvidas sobre ingredientes ou alergias? <span className="text-accent">Fala com a gente.</span>
         </p>
         <a href={whatsappUrl("Olá, Vegui! Tenho uma dúvida.")} target="_blank" rel="noopener noreferrer" className={btn({ variant: "accent", size: "lg" })}>
           <MessageCircle className="h-5 w-5" /> Chamar no WhatsApp

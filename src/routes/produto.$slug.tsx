@@ -53,7 +53,7 @@ function ProductPage() {
           </div>
 
           <div className="flex flex-col md:pt-10">
-            <p className="font-script text-3xl text-accent">{cat.script}</p>
+            <p className="text-2xl font-extrabold text-accent">{cat.script}</p>
             <h1 className="text-display mt-1 text-primary">{p.name}</h1>
             <p className="mt-6 max-w-md text-lg text-muted-foreground">{p.description}</p>
 
@@ -111,7 +111,7 @@ function ProductPage() {
 
       <section className="mx-auto mt-20 max-w-7xl px-5 md:px-8">
         <h2 className="text-title text-primary">
-          Combina <span className="font-script text-accent">com isso</span>
+          Combina <span className="text-accent">com isso</span>
         </h2>
         <div className="mt-10 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {others.map((x, i) => (
