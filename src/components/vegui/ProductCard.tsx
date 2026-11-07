@@ -14,10 +14,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       <Link
         to="/produto/$slug"
         params={{ slug: product.slug }}
-        className={cn(
-          "relative block aspect-[4/5] overflow-hidden bg-cream",
-          index % 2 === 0 ? "rounded-t-[999px] rounded-b-3xl" : "rounded-3xl",
-        )}
+        className="arch relative block aspect-[4/5] overflow-hidden bg-cream"
       >
         <img
           src={product.image}
