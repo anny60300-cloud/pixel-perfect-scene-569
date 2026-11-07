@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, MapPin, MessageCircle } from "lucide-react";
+import { Clock, MapPin, MessageCircle, Phone } from "lucide-react";
 import { btn, Eyebrow } from "@/components/vegui/primitives";
 import { whatsappUrl, WHATSAPP_NUMBER } from "@/lib/cart-logic";
 
@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contato")({
 
 function Contact() {
   const items = [
-    { icon: MapPin, t: "Endereço", d: "Pendente de validação" },
-    { icon: Clock, t: "Horário de funcionamento", d: "Pendente de validação" },
-    { icon: MessageCircle, t: "WhatsApp", d: WHATSAPP_NUMBER || "Pendente de validação" },
+    { icon: MapPin, t: "Endereço", d: "Rua Chile, 1678 — Curitiba/PR, CEP 80220" },
+    { icon: Clock, t: "Horário de funcionamento", d: "Segunda a sexta, das 8h às 21h. Sábado e domingo: fechado." },
+    { icon: Phone, t: "Telefone", d: "(67) 0000-0000" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 pt-14 md:px-8 md:pt-20">
