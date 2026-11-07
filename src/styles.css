@@ -7,13 +7,12 @@
 /*
  * VEGUI FOODS — Organic Minimalism design system.
  * Hierarchy: cream/white canvas (≈70%), green brand (≈22%), pink accent (≈8%).
- * Fonts: Garet → "Urbanist" fallback; Intro Script → "Kaushan Script" fallback.
- * Swap by changing --font-sans / --font-script only.
+ * Fonts: Garet → "Urbanist" fallback (single family site-wide).
+ * Swap by changing --font-sans only.
  */
 
 @theme inline {
   --font-sans: "Garet", "Urbanist", ui-sans-serif, system-ui, sans-serif;
-  --font-script: "Intro Script", "Kaushan Script", cursive;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -120,11 +119,6 @@
   letter-spacing: 0.32em;
   text-transform: uppercase;
   font-weight: 700;
-}
-@utility font-script {
-  font-family: var(--font-script);
-  font-weight: 400;
-  letter-spacing: 0;
 }
 @utility text-price {
   font-variant-numeric: tabular-nums;
