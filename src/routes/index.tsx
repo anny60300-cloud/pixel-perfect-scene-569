@@ -137,14 +137,16 @@ function Index() {
               to="/cardapio"
               search={{ categoria: c.id, q: undefined }}
               className={
-                "group flex aspect-square flex-col justify-between rounded-[2rem] p-6 transition hover:-translate-y-1 " +
+                "group flex aspect-square min-w-0 flex-col justify-between rounded-[2rem] p-4 transition hover:-translate-y-1 sm:p-5 md:p-6 " +
                 (i % 2 === 0 ? "bg-cream text-primary" : "bg-accent-soft text-primary-deep")
               }
             >
-              <AppleIcon tone={i % 2 === 0 ? "pink" : "green"} className="h-10 w-10 transition group-hover:rotate-12" />
-              <div>
-                <p className="text-3xl font-extrabold md:text-4xl">{c.script}</p>
-                <p className="mt-1 text-sm font-bold">{c.label} →</p>
+              <AppleIcon tone={i % 2 === 0 ? "pink" : "green"} className="h-8 w-8 shrink-0 transition group-hover:rotate-12 md:h-10 md:w-10" />
+              <div className="min-w-0">
+                <p className="text-[clamp(1.05rem,2.5vw,1.85rem)] font-extrabold leading-tight break-words hyphens-auto">
+                  {c.script}
+                </p>
+                <p className="mt-1 text-xs font-bold break-words md:text-sm">{c.label} →</p>
               </div>
             </Link>
           ))}
