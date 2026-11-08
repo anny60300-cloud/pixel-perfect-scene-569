@@ -33,8 +33,9 @@ function ProductPage() {
   const { add } = useCart();
   const [qty, setQty] = useState(1);
   const cat = categories.find((c) => c.id === p.category)!;
-  const related = products.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 3);
-  const others = related.length ? related : products.filter((x) => x.slug !== p.slug).slice(0, 3);
+  const others = p.pairs
+    .map((s) => products.find((x) => x.slug === s))
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
   return (
     <>

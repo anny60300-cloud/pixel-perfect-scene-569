@@ -29,6 +29,8 @@ export type Product = {
   ingredients: string[];
   image: string;
   popular?: boolean;
+  /** slugs de produtos de outras categorias que combinam com este */
+  pairs: string[];
 };
 
 export const products: Product[] = [
@@ -42,6 +44,7 @@ export const products: Product[] = [
     ingredients: ["Arroz para risoto", "Ervilhas", "Alho-poró", "Ervas frescas", "Castanhas"],
     image: risoto,
     popular: true,
+    pairs: ["pink-lemonade", "garden-crunch", "choco-hug"],
   },
   {
     slug: "vegui-bowl",
@@ -53,6 +56,7 @@ export const products: Product[] = [
     ingredients: ["Arroz integral", "Grão-de-bico crocante", "Legumes assados", "Folhas frescas", "Molho cítrico"],
     image: bowl,
     popular: true,
+    pairs: ["green-boost", "avocado", "berry-dream"],
   },
   {
     slug: "avocado",
@@ -63,6 +67,7 @@ export const products: Product[] = [
     ingredients: ["Pão artesanal", "Creme de avocado", "Alface fresca", "Tomate", "Maionese vegana"],
     image: avocado,
     popular: true,
+    pairs: ["tropical-vibes", "berry-dream", "risoto-verde"],
   },
   {
     slug: "garden-crunch",
@@ -73,6 +78,7 @@ export const products: Product[] = [
       "Pão integral, grão-de-bico temperado, cenoura, folhas frescas e molho especial da casa.",
     ingredients: ["Pão integral", "Grão-de-bico temperado", "Cenoura", "Folhas frescas", "Molho especial da casa"],
     image: garden,
+    pairs: ["pink-lemonade", "choco-hug", "vegui-bowl"],
   },
   {
     slug: "mushroom-melt",
@@ -82,6 +88,7 @@ export const products: Product[] = [
     description: "Pão artesanal, cogumelos salteados, cebola caramelizada e queijo vegetal cremoso.",
     ingredients: ["Pão artesanal", "Cogumelos salteados", "Cebola caramelizada", "Queijo vegetal cremoso"],
     image: mushroom,
+    pairs: ["pink-lemonade", "risoto-verde", "berry-dream"],
   },
   {
     slug: "choco-hug",
@@ -92,6 +99,7 @@ export const products: Product[] = [
     ingredients: ["Chocolate", "Base de brownie vegana"],
     image: choco,
     popular: true,
+    pairs: ["green-boost", "mushroom-melt", "vegui-bowl"],
   },
   {
     slug: "berry-dream",
@@ -101,6 +109,7 @@ export const products: Product[] = [
     description: "Cheesecake vegetal de frutas vermelhas, com base crocante e creme delicado.",
     ingredients: ["Frutas vermelhas", "Creme vegetal", "Base crocante"],
     image: berry,
+    pairs: ["tropical-vibes", "avocado", "risoto-verde"],
   },
   {
     slug: "pink-lemonade",
@@ -111,6 +120,7 @@ export const products: Product[] = [
     ingredients: ["Limão", "Morango natural"],
     image: lemonade,
     popular: true,
+    pairs: ["garden-crunch", "choco-hug", "vegui-bowl"],
   },
   {
     slug: "green-boost",
@@ -120,6 +130,7 @@ export const products: Product[] = [
     description: "Suco de maçã, couve, limão e gengibre.",
     ingredients: ["Maçã", "Couve", "Limão", "Gengibre"],
     image: greenBoost,
+    pairs: ["avocado", "berry-dream", "risoto-verde"],
   },
   {
     slug: "tropical-vibes",
@@ -129,6 +140,7 @@ export const products: Product[] = [
     description: "Suco natural de manga com maracujá.",
     ingredients: ["Manga", "Maracujá"],
     image: tropical,
+    pairs: ["mushroom-melt", "choco-hug", "vegui-bowl"],
   },
 ];
 
